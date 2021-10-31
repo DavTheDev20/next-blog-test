@@ -14,3 +14,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightblue;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  list-style: none;
+  color: white;
+}
+
+nav ul a:hover {
+  color: teal;
+}
