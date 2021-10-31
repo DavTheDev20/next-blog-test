@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Head from 'next/head';
 
 const formStyles = {
   marginLeft: '10px',
@@ -55,6 +56,9 @@ const Create = () => {
 
   return (
     <div>
+      <Head>
+        <title>Create</title>
+      </Head>
       <h1>Create</h1>
       <hr />
       <br />

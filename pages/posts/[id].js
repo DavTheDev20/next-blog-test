@@ -6,8 +6,11 @@ const Post = (props) => {
       <Head>
         <title>{props.data.title}</title>
       </Head>
-      <h1>{props.data.title}</h1>
-      <p>{props.data.content}</p>
+      <div className="post" style={{ width: '75%', marginLeft: '10px' }}>
+        <h1>{props.data.title}</h1>
+        <p>{props.data.content}</p>
+        <h4>Posted On: {props.data.datePosted.slice(0, 10)}</h4>
+      </div>
     </div>
   );
 };

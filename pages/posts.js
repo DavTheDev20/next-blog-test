@@ -17,9 +17,11 @@ const Posts = (props) => {
             <div key={post._id}>
               <h2>{post.title}</h2>
               <p>
-                {post.content.slice(0, 20)}...{' '}
-                <Link href={postRoute} style={{ textDecoration: 'underline' }}>
-                  Read More
+                {post.content.slice(0, 35)}...{' '}
+                <Link href={postRoute}>
+                  <a style={{ color: 'blue', textDecoration: 'underline' }}>
+                    Read More
+                  </a>
                 </Link>
               </p>
             </div>
