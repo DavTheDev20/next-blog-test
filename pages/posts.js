@@ -14,8 +14,8 @@ const Posts = (props) => {
         {props.data.map((post) => {
           const postRoute = '/posts/' + post._id;
           return (
-            <div key={post._id}>
-              <h2>{post.title}</h2>
+            <div key={post._id} style={{ marginLeft: '10px' }}>
+              <h2 style={{ width: '23%', lineHeight: '1.25' }}>{post.title}</h2>
               <p>
                 {post.content.slice(0, 35)}...{' '}
                 <Link href={postRoute}>
